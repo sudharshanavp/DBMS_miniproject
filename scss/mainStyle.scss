@@ -1,5 +1,150 @@
-@import 'colors'
-@import 'fontSize'
-@import 'fontFamily'
+@import 'fontFamily', 'simple-grid.scss';
+
+//fonts
+$reg10: 0.64rem;
+$reg13: 0.8rem;
+$reg16: 1rem;
+$reg20: 1.250rem;
+$reg25: 1.563rem;
+$reg31: 1.953rem;
+$reg39: 2.411rem;
+$reg41: 3.052rem;
+$reg69: 3.815rem;
+
+div{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.container_main{
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 24px 16px;
+        flex-direction: row;
+        align-items: center;
+
+    }
+    li {
+      
+    }
+
+    li:nth-child(1) {
+        margin-right: auto;
+    }
+
+    a {
+        text-decoration: none;
+        font-family: 'Plex_medium';
+        font-size: $reg16;
+        margin-left: 16px;
+    }
+
+    #logo {
+        font-size: $reg31;
+    }
+}
+
+#home{
+    background-color: gray;
+    height: 80vh;
+}
+
+.home-head{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+h1 {
+    font-family: 'Karla_regular';
+    font-size: $reg69;
+}
+
+h2 {
+    @extend h1;
+    font-size: $reg41;
+}
+
+h3 {
+    @extend h1;
+    font-size: $reg39;
+}
+#regHead{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+}
+
+
+form {
+    max-width: 300px;
+  padding-top: 1rem;
+  padding-bottom:  1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+    font-family: 'Karla_regular';
+margin-left: auto;
+  margin-right: auto;
+
+}
+
+.registrationForm{
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  background-color: #C4C4C4;
+  border-radius: 5px;
+  border: gray solid 0.3rem;
+  label {
+      width: 90%;
+            display: block; 
+      font-size: $reg16;
+      margin-top: 16px;
+  }
+
+  input{
+       width: 98%;
+    font-size: $reg20;
+    height: 32px;
+    line-height: 30px;
+    background-color: #FFFFFF;
+margin-left: auto;
+      margin-right: auto;
+
+    border: gray solid 0.5px;
+    border-radius: 5px;
+    cursor: text;
+  }
+  a{
+      text-decoration: none;
+  }
+  p{
+      text-align: center;
+      color: black;
+      text-decoration: none;
+      font-size: $reg13;
+  }
+}
+
+  button {
+  font-size: $reg20;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  padding-left:24px;
+  padding-right: 24px;
+  border-color:  black;
+  border-radius: 5px;
+}
 
 

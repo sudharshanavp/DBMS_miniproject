@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Band Registration</title>
+</head>
+
+<body>
+
+    <div class="container_main">
+        <header>
+            <div class="menu">
+                <nav class="main-nav">
+                    <ul class="nav-bar">
+                        <li style><a href="index.html" id="logo">FHE</a></li>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="#contact">Registration</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="registrationForm">
+
+            <form method="post">
+
+                <h3 id="regHead">User Register</h3>
+                <label for="fullname">First Name</label>
+                <input type="text" name="fullname" id="fname">
+                <label for="uname">Username</label>
+                <input type="text" name="uname" id="lname">
+                <label for="mail">Email</label>
+                <input type="email" name="mail" id="mail">
+                <label for="phone">Phone Number</label>
+                <input onchange="this.value=addSpaces(this.value);" type="tel" pattern="[0-9]{10}" maxlength="10"
+                    name="ph" id="phone">
+
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass">
+                <label for="cpass">Re-enter Password</label>
+                <input type="password" name="pass" id="cpass">
+                <a href="#">
+                    <p>By clicking register you agree to our <strong>Terms and Conditons and Privacy Policy</strong></p>
+                </a>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
