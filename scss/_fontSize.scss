@@ -1,0 +1,53 @@
+.Karla_reg{
+    font-family: 'Karla_regular';
+}
+
+.Plex_reg{
+    font-family: 'Plex_regular';
+}
+
+.Plex_20{
+    @extend .Plex_reg;
+    font-size: 1.250rem; 
+}
+
+.karla_10{
+    @extend .Karla_reg;
+    font-size: 0.64rem;
+}
+
+.karla_13{
+    @extend .Karla_reg;
+    font-size: 0.8rem;
+}
+
+.karla_16{
+    @extend .Karla_reg;
+    font-size: 1rem;
+}
+
+.karla_20{
+    @extend .Karla_reg;
+    font-size: 1.250rem;
+}
+
+.karla_25{
+    @extend .Karla_reg;
+    font-size: 1.563rem;
+}
+
+.karla_31{
+    @extend .Karla_reg;
+    font-size: 1.953rem;
+}
+
+.karla_39{
+    @extend .Karla_reg;
+    font-size: 2.411rem;
+}
+
+.karla_41{
+    @extend .Karla_reg;
+    font-size: 3.052rem;
+}
+
