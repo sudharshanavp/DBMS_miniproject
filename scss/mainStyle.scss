@@ -83,6 +83,7 @@ h3 {
 }
 
 
+
 form {
     max-width: 300px;
   padding-top: 1rem;
@@ -96,7 +97,7 @@ margin-left: auto;
 }
 
 .registrationForm{
-  max-width: 500px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   
@@ -147,4 +148,13 @@ margin-left: auto;
   border-radius: 5px;
 }
 
-
+.login-cont{
+    .container{
+        max-width: 1000px;
+        width: 100%;
+    }
+    .registrationForm{
+        padding-top: 150px;
+        padding-bottom: 150px ;
+    }
+}
