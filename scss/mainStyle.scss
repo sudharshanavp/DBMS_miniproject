@@ -11,6 +11,35 @@ $reg39: 2.411rem;
 $reg41: 3.052rem;
 $reg69: 3.815rem;
 
+h1 {
+    font-family: 'Karla_regular';
+    font-size: $reg69;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    @extend h1;
+    font-size: $reg41;
+}
+
+h3 {
+    @extend h1;
+    font-size: $reg39;
+}
+
+h4{
+    @extend h1;
+    font-size: $reg31;
+}
+#regHead{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+}
+
+
 div{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -22,32 +51,37 @@ div{
     margin-right: auto;
 }
 
+.menu{
+    text-align: center;
+    h4 {
+        padding: 16px;
+    }
+}
+
 nav {
+border-top: solid black 2px;
+border-bottom: solid black 2px;
+
     ul {
         display: flex;
         list-style: none;
-        padding: 24px 16px;
         flex-direction: row;
-        align-items: center;
-
+        justify-content:  center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
     }
     li {
-      
+        padding: 8px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
-
-    li:nth-child(1) {
-        margin-right: auto;
-    }
-
     a {
         text-decoration: none;
         font-family: 'Plex_medium';
         font-size: $reg16;
-        margin-left: 16px;
-    }
-
-    #logo {
-        font-size: $reg31;
     }
 }
 
@@ -61,28 +95,10 @@ nav {
     margin-bottom: auto;
 }
 
-h1 {
-    font-family: 'Karla_regular';
-    font-size: $reg69;
+section {
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
-
-h2 {
-    @extend h1;
-    font-size: $reg41;
-}
-
-h3 {
-    @extend h1;
-    font-size: $reg39;
-}
-#regHead{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 0;
-}
-
-
 
 form {
     max-width: 300px;

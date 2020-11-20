@@ -121,6 +121,27 @@
   .hidden-sm {
     display: block; } }
 
+h1, h4, h3, h2 {
+  font-family: 'Karla_regular';
+  font-size: 3.815rem;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+h2 {
+  font-size: 3.052rem; }
+
+h3 {
+  font-size: 2.411rem; }
+
+h4 {
+  font-size: 1.953rem; }
+
+#regHead {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0; }
+
 div {
   margin-top: 0px;
   margin-bottom: 0px; }
@@ -130,24 +151,32 @@ div {
   margin-left: auto;
   margin-right: auto; }
 
-nav ul {
-  display: flex;
-  list-style: none;
-  padding: 24px 16px;
-  flex-direction: row;
-  align-items: center; }
+.menu {
+  text-align: center; }
+  .menu h4 {
+    padding: 16px; }
 
-nav li:nth-child(1) {
-  margin-right: auto; }
-
-nav a {
-  text-decoration: none;
-  font-family: 'Plex_medium';
-  font-size: 1rem;
-  margin-left: 16px; }
-
-nav #logo {
-  font-size: 1.953rem; }
+nav {
+  border-top: solid black 2px;
+  border-bottom: solid black 2px; }
+  nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0; }
+  nav li {
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px; }
+  nav a {
+    text-decoration: none;
+    font-family: 'Plex_medium';
+    font-size: 1rem; }
 
 #home {
   background-color: gray;
@@ -157,21 +186,9 @@ nav #logo {
   margin-top: auto;
   margin-bottom: auto; }
 
-h1, h3, h2 {
-  font-family: 'Karla_regular';
-  font-size: 3.815rem; }
-
-h2 {
-  font-size: 3.052rem; }
-
-h3 {
-  font-size: 2.411rem; }
-
-#regHead {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0; }
+section {
+  padding-top: 16px;
+  padding-bottom: 16px; }
 
 form {
   max-width: 300px;
