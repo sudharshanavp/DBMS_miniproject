@@ -32,6 +32,17 @@ h4{
     @extend h1;
     font-size: $reg31;
 }
+
+h5 {
+    @extend h1;
+    font-size: $reg25;
+}
+
+h6{
+    @extend h1;
+    font-size: $reg20;
+}
+
 #regHead{
     text-align: center;
     margin-left: auto;
@@ -55,6 +66,11 @@ div{
     text-align: center;
     h4 {
         padding: 16px;
+    }
+    a{
+                color: #3A7D44;
+
+        text-decoration: none;
     }
 }
 
@@ -81,14 +97,11 @@ border-bottom: solid black 2px;
     a {
         text-decoration: none;
         font-family: 'Plex_medium';
-        font-size: $reg16;
+        font-size: $reg20;
+        color: #3A7D44;
     }
 }
 
-#home{
-    background-color: gray;
-    height: 80vh;
-}
 
 .home-head{
     margin-top: auto;
@@ -100,23 +113,22 @@ section {
     padding-bottom: 16px;
 }
 
-form {
-    max-width: 300px;
-  padding-top: 1rem;
-  padding-bottom:  1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-    font-family: 'Karla_regular';
-margin-left: auto;
-  margin-right: auto;
 
-}
 
 .registrationForm{
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  
+  form {
+    max-width: 300px;
+    padding-top: 1rem;
+    padding-bottom:  1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: 'Karla_regular';
+    margin-left: auto;
+    margin-right: auto;
+} 
   background-color: #C4C4C4;
   border-radius: 5px;
   border: gray solid 0.3rem;
@@ -128,14 +140,13 @@ margin-left: auto;
   }
 
   input{
-       width: 98%;
+    width: 98%;
     font-size: $reg20;
     height: 32px;
     line-height: 30px;
     background-color: #FFFFFF;
-margin-left: auto;
-      margin-right: auto;
-
+    margin-left: auto;
+    margin-right: auto;
     border: gray solid 0.5px;
     border-radius: 5px;
     cursor: text;
@@ -174,3 +185,82 @@ margin-left: auto;
         padding-bottom: 150px ;
     }
 }
+
+//Events page
+.events-body{
+    background-color: #F1FAEE;
+}
+
+.events-heading{
+    color: #1D3557;
+    text-align: center;
+    padding: 64px 0 64px 0;
+    h1{
+        margin: auto 0 auto 0;
+    }
+
+}
+
+.events-card-container{
+    background-color: #457B9D;
+    max-width: 800px;
+    margin: 16px auto 16px auto;
+    display: flex;
+    flex-direction: row;
+    padding: 24px 48px 24px 48px;
+    border-radius: 16px;
+    color: #F1FAEE;
+    .event-card-details{
+        h6{
+            padding: 8px 0px 8px 0px;
+        }
+    }
+
+    .book-button{
+        margin: auto 0 auto auto;
+    }
+
+    button{
+        padding: 16px 24px 16px 24px;
+        border-radius: 5px;
+        font-size: $reg20;
+        margin:  0;
+        font-family: Karla_regular;
+
+    }
+}
+
+.checkoutForm{
+    @extend .events-card-container;
+    font-family: 'Karla_regular';
+    font-weight:600;
+    justify-content: center;
+    background-color: transparent;
+    color: #1D3557;
+    label{
+        display: block;
+        padding: 8px 0 8px 0;
+    }
+    input{
+        font-family: 'Karla_regular';
+        font-weight: bold;
+        width: 360px;
+        padding: 12px;
+        border-color: #1D3557;
+        border-radius: 5px;
+    }
+    input:invalid{
+    border-color: red;
+    }
+    button{
+        margin: 16px 0 0 0;
+        font-size: $reg16;
+        padding: 8px 16px 8px 16px;
+    }
+}
+
+    .checkout-2{
+        display: flex;        
+flex-direction: row;
+        justify-content: center;
+    }

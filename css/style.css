@@ -121,7 +121,7 @@
   .hidden-sm {
     display: block; } }
 
-h1, h4, h3, h2 {
+h1, h6, h5, h4, h3, h2 {
   font-family: 'Karla_regular';
   font-size: 3.815rem;
   margin-top: 0px;
@@ -135,6 +135,12 @@ h3 {
 
 h4 {
   font-size: 1.953rem; }
+
+h5 {
+  font-size: 1.563rem; }
+
+h6 {
+  font-size: 1.25rem; }
 
 #regHead {
   text-align: center;
@@ -155,6 +161,9 @@ div {
   text-align: center; }
   .menu h4 {
     padding: 16px; }
+  .menu a {
+    color: #3A7D44;
+    text-decoration: none; }
 
 nav {
   border-top: solid black 2px;
@@ -176,11 +185,8 @@ nav {
   nav a {
     text-decoration: none;
     font-family: 'Plex_medium';
-    font-size: 1rem; }
-
-#home {
-  background-color: gray;
-  height: 80vh; }
+    font-size: 1.25rem;
+    color: #3A7D44; }
 
 .home-head {
   margin-top: auto;
@@ -190,16 +196,6 @@ section {
   padding-top: 16px;
   padding-bottom: 16px; }
 
-form {
-  max-width: 300px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  font-family: 'Karla_regular';
-  margin-left: auto;
-  margin-right: auto; }
-
 .registrationForm {
   max-width: 480px;
   margin-left: auto;
@@ -207,6 +203,15 @@ form {
   background-color: #C4C4C4;
   border-radius: 5px;
   border: gray solid 0.3rem; }
+  .registrationForm form {
+    max-width: 300px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: 'Karla_regular';
+    margin-left: auto;
+    margin-right: auto; }
   .registrationForm label {
     width: 90%;
     display: block;
@@ -250,3 +255,63 @@ button {
 .login-cont .registrationForm {
   padding-top: 150px;
   padding-bottom: 150px; }
+
+.events-body {
+  background-color: #F1FAEE; }
+
+.events-heading {
+  color: #1D3557;
+  text-align: center;
+  padding: 64px 0 64px 0; }
+  .events-heading h1, .events-heading h2, .events-heading h3, .events-heading h4, .events-heading h5, .events-heading h6 {
+    margin: auto 0 auto 0; }
+
+.events-card-container, .checkoutForm {
+  background-color: #457B9D;
+  max-width: 800px;
+  margin: 16px auto 16px auto;
+  display: flex;
+  flex-direction: row;
+  padding: 24px 48px 24px 48px;
+  border-radius: 16px;
+  color: #F1FAEE; }
+  .events-card-container .event-card-details h6, .checkoutForm .event-card-details h6 {
+    padding: 8px 0px 8px 0px; }
+  .events-card-container .book-button, .checkoutForm .book-button {
+    margin: auto 0 auto auto; }
+  .events-card-container button, .checkoutForm button {
+    padding: 16px 24px 16px 24px;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    margin: 0;
+    font-family: Karla_regular; }
+
+.checkoutForm {
+  font-family: 'Karla_regular';
+  font-weight: 600;
+  justify-content: center;
+  background-color: transparent;
+  color: #1D3557; }
+  .checkoutForm label {
+    display: block;
+    padding: 8px 0 8px 0; }
+  .checkoutForm input {
+    font-family: 'Karla_regular';
+    font-weight: bold;
+    width: 360px;
+    padding: 12px;
+    border-color: #1D3557;
+    border-radius: 5px; }
+  .checkoutForm input:invalid {
+    border-color: red; }
+  .checkoutForm input:valid {
+    border-color: green; }
+  .checkoutForm button {
+    margin: 16px 0 0 0;
+    font-size: 1rem;
+    padding: 8px 16px 8px 16px; }
+
+.checkout-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
