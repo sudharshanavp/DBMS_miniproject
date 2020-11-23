@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container_main">
+        <header>
+            <div class="menu">
+                <h4><a href="index.html" id="logo">Full Hover Events</a></h4>
+                <nav class="main-nav">
+                    <ul class="nav-bar">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="#booking">Booking</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="ticket-wrapper">
+            <div class="ticket-cont container">
+                <div class="home-head">
+                    <h2 class="">Ticket Booking</h2>
+                    <table>
+                        <tr>
+                            <td>Band Name:</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>City:</td>
+                            <td>Bengaluru</td>
+                        </tr>
+                        <tr>
+                            <td>Venue:</td>
+                            <td>Chinnaswamy Stadium</td>
+                        </tr>
+                        <tr>
+                            <td>Date:</td>
+                            <td>26th Feb 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Time:</td>
+                            <td>6:30PM - 1:30AM</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="statusForm">
+                    <form method="post">
+                        <label for="fullname">First Name</label>
+                        <input type="text" name="fullname" id="fname">
+                        <label for="uname">Username</label>
+                        <input type="text" name="uname" id="lname">
+                        <label for="mail">Email</label>
+                        <input type="email" name="mail" id="mail">
+                        <label for="phone">Phone Number</label>
+                        <input onchange="this.value=addSpaces(this.value);" type="tel" pattern="[0-9]{10}"
+                            maxlength="10" name="ph" id="phone">
+                        <label for="pass">Password</label>
+                        <input type="password" name="pass" id="pass">
+                        <label for="cpass">Re-enter Password</label>
+                        <input type="password" name="pass" id="cpass">
+                        <button type="submit" class="form-btn" value="submit">Check Status</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

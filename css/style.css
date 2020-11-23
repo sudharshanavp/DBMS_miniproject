@@ -153,7 +153,7 @@ div {
   margin-bottom: 0px; }
 
 .container_main {
-  max-width: 1050px;
+  max-width: 70rem;
   margin-left: auto;
   margin-right: auto; }
 
@@ -162,7 +162,6 @@ div {
   .menu h4 {
     padding: 16px; }
   .menu a {
-    color: #3A7D44;
     text-decoration: none; }
 
 nav {
@@ -180,21 +179,89 @@ nav {
     padding-left: 0; }
   nav li {
     padding: 8px;
-    padding-left: 16px;
-    padding-right: 16px; }
+    margin: 0 8px 0 8px; }
   nav a {
     text-decoration: none;
-    font-family: 'Plex_medium';
-    font-size: 1.25rem;
-    color: #3A7D44; }
-
-.home-head {
-  margin-top: auto;
-  margin-bottom: auto; }
+    font-family: 'Plex_regular';
+    font-size: 1rem; }
 
 section {
-  padding-top: 16px;
-  padding-bottom: 16px; }
+  padding: 16px 0 16px 0;
+  margin: 1rem 0 1rem 0; }
+
+.hero {
+  margin-top: 0; }
+  .hero .home-head {
+    text-align: center;
+    padding: 2rem 0 2rem 0; }
+  .hero img {
+    height: 46rem;
+    width: 100%; }
+
+.about p, .events-section p {
+  font-family: 'Karla_regular';
+  font-weight: 500;
+  font-size: 1.563rem; }
+
+.about img, .events-section img {
+  width: 15rem;
+  height: 100%; }
+
+.form {
+  padding: 2rem 0 2rem 0;
+  margin: 0 auto 0 auto; }
+  .form input {
+    border-radius: 2px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 8px;
+    width: 100%; }
+
+.contact {
+  font-family: 'Karla_regular';
+  font-size: 1.25rem; }
+  .contact label {
+    min-width: 15rem; }
+  .contact input {
+    font-size: 1.25rem; }
+  .contact textarea {
+    border-radius: 2px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 8px;
+    width: 100%; }
+  .contact #privacy {
+    width: unset; }
+  .contact table td {
+    min-width: 10rem;
+    padding: 8px; }
+  .contact .form-btn {
+    font-size: 1.25rem;
+    padding: 1rem; }
+
+.form-btn {
+  font-family: 'Karla_regular';
+  background: #bbff00;
+  color: #1d1d1d;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 0;
+  transition: all 0.25s;
+  border-radius: 5px;
+  width: auto;
+  position: relative;
+  min-width: 150px; }
+  .form-btn:hover {
+    background: #2b2bff;
+    box-shadow: 0px 6px 15px #0000ff61;
+    color: #ffffff; }
+    .form-btn:hover::after {
+      opacity: 1;
+      transition: all 0.25s;
+      color: #ffffff; }
 
 .registrationForm {
   max-width: 480px;
@@ -238,23 +305,61 @@ section {
 
 button {
   font-size: 1.25rem;
-  margin-left: auto;
-  margin-right: auto;
   display: block;
-  margin-top: 20px;
   padding: 10px;
   padding-left: 24px;
   padding-right: 24px;
   border-color: black;
   border-radius: 5px; }
 
-.login-cont .container {
-  max-width: 1000px;
-  width: 100%; }
+.ticket-wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 50vh; }
 
-.login-cont .registrationForm {
-  padding-top: 150px;
-  padding-bottom: 150px; }
+.ticket-cont {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center; }
+  .ticket-cont .home-head {
+    padding: 1rem;
+    max-width: 20rem; }
+  .ticket-cont .statusForm {
+    max-width: 20rem;
+    margin: 0 auto 0 auto;
+    padding: 16px;
+    width: 30%; }
+    .ticket-cont .statusForm form label {
+      display: block;
+      padding: 4px 0 4px 0;
+      margin: 4px 0 4px 0; }
+    .ticket-cont .statusForm form input {
+      border-radius: 2px;
+      border-width: 2px;
+      border-style: solid;
+      border-color: black;
+      padding: 8px;
+      width: 100%; }
+    .ticket-cont .statusForm form button {
+      margin-top: 8px; }
+  .ticket-cont .ticketStatus {
+    max-width: 30rem;
+    margin: 0 auto 0 auto;
+    padding: 16px; }
+    .ticket-cont .ticketStatus table {
+      font-family: 'Karla_regular';
+      font-size: 1.25rem;
+      font-weight: 600; }
+      .ticket-cont .ticketStatus table td {
+        padding: 4px; }
+      .ticket-cont .ticketStatus table tr :nth-child(1) {
+        text-align: right; }
+
+.events-section img {
+  max-width: 50rem;
+  width: 100%;
+  margin: 32px auto 0 auto; }
 
 .events-body {
   background-color: #F1FAEE; }
@@ -266,25 +371,30 @@ button {
   .events-heading h1, .events-heading h2, .events-heading h3, .events-heading h4, .events-heading h5, .events-heading h6 {
     margin: auto 0 auto 0; }
 
-.events-card-container, .checkoutForm {
-  background-color: #457B9D;
-  max-width: 800px;
-  margin: 16px auto 16px auto;
+#events-page :nth-child(2n+1) {
+  flex-direction: row-reverse; }
+
+.events-flex-container {
+  margin-top: 3rem;
   display: flex;
-  flex-direction: row;
-  padding: 24px 48px 24px 48px;
-  border-radius: 16px;
-  color: #F1FAEE; }
-  .events-card-container .event-card-details h6, .checkoutForm .event-card-details h6 {
-    padding: 8px 0px 8px 0px; }
-  .events-card-container .book-button, .checkoutForm .book-button {
-    margin: auto 0 auto auto; }
-  .events-card-container button, .checkoutForm button {
-    padding: 16px 24px 16px 24px;
-    border-radius: 5px;
+  flex-direction: row; }
+  .events-flex-container :nth-child(2) {
+    margin-left: auto;
+    margin-right: auto; }
+  .events-flex-container .events-flex-item img {
+    max-width: 25rem; }
+  .events-flex-container .events-flex-item h2 {
+    padding: 16px; }
+  .events-flex-container .events-flex-item table td {
+    font-family: 'Karla_regular';
+    font-weight: 400;
+    font-size: 1.563rem;
+    padding: 16px; }
+  .events-flex-container .events-flex-item .form-btn {
     font-size: 1.25rem;
-    margin: 0;
-    font-family: Karla_regular; }
+    padding: 16px;
+    margin-left: 16px;
+    margin-top: 16px; }
 
 .checkoutForm {
   font-family: 'Karla_regular';
@@ -304,8 +414,6 @@ button {
     border-radius: 5px; }
   .checkoutForm input:invalid {
     border-color: red; }
-  .checkoutForm input:valid {
-    border-color: green; }
   .checkoutForm button {
     margin: 16px 0 0 0;
     font-size: 1rem;

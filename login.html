@@ -12,65 +12,37 @@
     <div class="container_main">
         <header>
             <div class="menu">
+                <h4><a href="index.html" id="logo">Full Hover Events</a></h4>
                 <nav class="main-nav">
                     <ul class="nav-bar">
-                        <li style><a href="index.html" id="logo">FHE</a></li>
                         <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="#contact">Registration</a></li>
-                        <li><a href="login.html">Login</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="login.html">Tickets Status</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <div class="login-cont">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="registrationForm">
-                            <h3 id="regHead">Member Login</h3>
-                            <form method="post">
-                                <label for="text">Username/Email</label>
-                                <input type="email" name="mail" id="mail">
-                                <label for="password">Password</label>
-                                <input type="password" name="pass" id="pass">
-                                <button type="submit" class="animated pulse infinite slow submit"
-                                    value="submit">Login</button>
-                                <a href="#">
-                                    <p>Trouble logging in? Request New Password.</p>
-                                </a>
-                                <a href="registrationUser.html">
-                                    <p>New User? Register Here!</p>
-                                </a>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="registrationForm">
-                            <h3 id="regHead">Band Login</h3>
-                            <form method="post">
-                                <label for="text">Email</label>
-                                <input type="email" name="mail" id="mail">
-                                <label for="password">Password</label>
-                                <input type="password" name="pass" id="pass">
-                                <button type="submit" class="animated pulse infinite slow submit"
-                                    value="submit">Login</button>
-                                <a href="#">
-                                    <p>Trouble logging in? Request New Password.</p>
-                                </a>
-                                <a href="registrationBand.html">
-                                    <p>New band? Register Here!</p>
-                                </a>
-                            </form>
-                        </div>
-                    </div>
+        <section class="ticket-wrapper">
+            <div class="ticket-cont container">
+                <div class="home-head">
+                    <h2>Ticket Status</h2>
+                    <p>Check your ticket status by entering your email address and the password you entered while
+                        booking
+                        the tickets</p>
+                </div>
+                <div class="statusForm">
+                    <form method="post">
+                        <label for="text">Email</label>
+                        <input type="email" name="mail" id="mail">
+                        <label for="password">Password</label>
+                        <input type="password" name="pass" id="pass">
+                        <button type="submit" class="form-btn" value="submit">Check Status</button>
+                    </form>
                 </div>
             </div>
-        </div>
-
-
-
-
-
+        </section>
     </div>
 </body>
 
