@@ -11,6 +11,11 @@ $reg39: 2.411rem;
 $reg41: 3.052rem;
 $reg69: 3.815rem;
 
+html{
+    
+    background-color:#f8f7f7;
+}
+
 h1 {
     font-family: 'Karla_regular';
     font-size: $reg69;
@@ -50,7 +55,6 @@ h6{
     margin: 0;
 }
 
-
 div{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -65,18 +69,82 @@ div{
 .menu{
     text-align: center;
     h4 {
-        padding: 16px;
+       padding: 16px;
     }
     a{
-
+        
         text-decoration: none;
+    }
+}
+
+.ticket-cont{
+    h2{
+        margin-bottom: 32px;
+    }
+    table{
+           td{
+                font-family: 'Karla_regular';
+                font-weight: 400;
+                font-size: $reg25;
+                padding: 8px;
+        }
+    }
+}
+
+.ticket-wrapper{
+    font-family: 'Karla_regular';
+    .form-btn{
+        font-size: $reg16; 
+    }
+}
+
+.checkout{
+    margin: 0 auto 0 auto;
+    h2{
+        margin-bottom: 32px;
+    }
+    display: flex;
+    align-items: center;
+    table{
+        td{
+            min-width: 15rem;
+        }
+        font-family: 'Karla_regular';
+        font-size: $reg20;
+    }
+    .statusForm{
+        max-width: 50rem;
+        margin: 0 auto 0 auto;
+        padding: 16px;
+        width: 100%;
+        
+        form{
+            label{
+                display: block;
+                padding: 4px 0 4px 0;
+                margin: 4px 0 4px 0;
+            } 
+            input{
+            border-radius: 2px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            padding: 8px;
+            width: 100%;
+        }
+    }
+    }
+    .form-btn{
+        font-size: $reg20;
+        padding: 1rem;
+        margin-top: 1.5rem;
     }
 }
 
 nav {
 border-top: solid black 2px;
 border-bottom: solid black 2px;
-
+color:#2b2bff;
     ul {
         display: flex;
         list-style: none;
@@ -93,9 +161,10 @@ border-bottom: solid black 2px;
         margin: 0 8px 0 8px;
     }
     a {
+        color: rgb(105, 105, 255);
         text-decoration: none;
-        font-family: 'Plex_regular';
-        font-size: $reg16;
+        font-family: 'Plex_bold';
+        font-size: $reg20;
     }
 }
 
@@ -272,7 +341,7 @@ section {
     align-items: center;
     min-height: 50vh;
     .home-head{
-        margin-bottom 32px;
+        margin-bottom: 32px;
     }
 }
 
@@ -342,11 +411,9 @@ section {
 
 //Events page
 .events-body{
-    background-color: #F1FAEE;
 }
 
 .events-heading{
-    color: #1D3557;
     text-align: center;
     padding: 64px 0 64px 0;
     h1{

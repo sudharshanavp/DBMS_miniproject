@@ -121,6 +121,9 @@
   .hidden-sm {
     display: block; } }
 
+html {
+  background-color: #f8f7f7; }
+
 h1, h6, h5, h4, h3, h2 {
   font-family: 'Karla_regular';
   font-size: 3.815rem;
@@ -164,9 +167,56 @@ div {
   .menu a {
     text-decoration: none; }
 
+.ticket-cont h2 {
+  margin-bottom: 32px; }
+
+.ticket-cont table td {
+  font-family: 'Karla_regular';
+  font-weight: 400;
+  font-size: 1.563rem;
+  padding: 8px; }
+
+.ticket-wrapper {
+  font-family: 'Karla_regular'; }
+  .ticket-wrapper .form-btn {
+    font-size: 1rem; }
+
+.checkout {
+  margin: 0 auto 0 auto;
+  display: flex;
+  align-items: center; }
+  .checkout h2 {
+    margin-bottom: 32px; }
+  .checkout table {
+    font-family: 'Karla_regular';
+    font-size: 1.25rem; }
+    .checkout table td {
+      min-width: 15rem; }
+  .checkout .statusForm {
+    max-width: 50rem;
+    margin: 0 auto 0 auto;
+    padding: 16px;
+    width: 100%; }
+    .checkout .statusForm form label {
+      display: block;
+      padding: 4px 0 4px 0;
+      margin: 4px 0 4px 0; }
+    .checkout .statusForm form input {
+      border-radius: 2px;
+      border-width: 2px;
+      border-style: solid;
+      border-color: black;
+      padding: 8px;
+      width: 100%; }
+  .checkout .form-btn {
+    font-size: 1.25rem;
+    padding: 1rem;
+    margin-top: 1.5rem; }
+
 nav {
   border-top: solid black 2px;
-  border-bottom: solid black 2px; }
+  border-bottom: solid black 2px;
+  color: #2b2bff; }
   nav ul {
     display: flex;
     list-style: none;
@@ -181,9 +231,10 @@ nav {
     padding: 8px;
     margin: 0 8px 0 8px; }
   nav a {
+    color: #6969ff;
     text-decoration: none;
-    font-family: 'Plex_regular';
-    font-size: 1rem; }
+    font-family: 'Plex_bold';
+    font-size: 1.25rem; }
 
 section {
   padding: 16px 0 16px 0;
@@ -316,6 +367,8 @@ button {
   display: flex;
   align-items: center;
   min-height: 50vh; }
+  .ticket-wrapper .home-head {
+    margin-bottom: 32px; }
 
 .ticket-cont {
   margin-left: auto;
@@ -361,11 +414,7 @@ button {
   width: 100%;
   margin: 32px auto 0 auto; }
 
-.events-body {
-  background-color: #F1FAEE; }
-
 .events-heading {
-  color: #1D3557;
   text-align: center;
   padding: 64px 0 64px 0; }
   .events-heading h1, .events-heading h2, .events-heading h3, .events-heading h4, .events-heading h5, .events-heading h6 {

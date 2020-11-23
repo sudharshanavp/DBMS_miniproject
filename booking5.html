@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -18,18 +19,17 @@
                         <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="events.html">Events</a></li>
-                        <li><a href="#booking">Booking</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="login.html">Login</a></li>
+                        <li><a href="login.html">Ticket Status</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <section class="ticket-wrapper">
-            <div class="ticket-cont container">
+            <div class="checkout">
                 <div class="home-head">
-                    <h2>Ticket Booking</h2>
-                    <h2>Band Name</h2>
+                    <h2 class="">Ticket Booking</h2>
+                    <h3>Band Name</h3>
                     <table>
                         <tr>
                             <td>City:</td>
@@ -60,13 +60,11 @@
                         <label for="phone">Phone Number</label>
                         <input onchange="this.value=addSpaces(this.value);" type="tel" pattern="[0-9]{10}"
                             maxlength="10" name="ph" id="phone">
-
                         <label for="pass">Password</label>
                         <input type="password" name="pass" id="pass">
                         <label for="cpass">Re-enter Password</label>
                         <input type="password" name="pass" id="cpass">
-
-                        <button type="submit" class="form-btn" value="submit">Check Status</button>
+                        <button type="submit" class="form-btn" value="submit">Pay now</button>
                     </form>
                 </div>
             </div>
