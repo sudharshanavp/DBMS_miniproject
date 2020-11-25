@@ -1,47 +1,56 @@
 @font-face {
-  font-family: 'Karla_regular';
-  src: url(../fonts/Karla-Regular.ttf) format("truetype"); }
-
+  font-family: "Karla_regular";
+  src: url(../fonts/Karla-Regular.ttf) format("truetype");
+}
 @font-face {
-  font-family: 'Karla_bold';
-  src: url(../fonts/Karla-Bold.ttf) format("truetype"); }
-
+  font-family: "Karla_bold";
+  src: url(../fonts/Karla-Bold.ttf) format("truetype");
+}
 @font-face {
-  font-family: 'Plex_regular';
-  src: url(../fonts/IBMPlexSans-Regular.ttf) format("truetype"); }
-
+  font-family: "Plex_regular";
+  src: url(../fonts/IBMPlexSans-Regular.ttf) format("truetype");
+}
 @font-face {
-  font-family: 'Plex_medium';
-  src: url(../fonts/IBMPlexSans-Medium.ttf) format("truetype"); }
-
+  font-family: "Plex_medium";
+  src: url(../fonts/IBMPlexSans-Medium.ttf) format("truetype");
+}
 @font-face {
-  font-family: 'Plex_bold';
-  src: url(../fonts/IBMPlexSans-Bold.ttf) format("truetype"); }
-
+  font-family: "Plex_bold";
+  src: url(../fonts/IBMPlexSans-Bold.ttf) format("truetype");
+}
 .container {
   width: 90%;
   margin-left: auto;
-  margin-right: auto; }
-  @media only screen and (min-width: 33.75em) {
-    .container {
-      width: 80%; } }
-  @media only screen and (min-width: 60em) {
-    .container {
-      width: 75%;
-      max-width: 60rem; } }
+  margin-right: auto;
+}
+@media only screen and (min-width: 33.75em) {
+  .container {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 60em) {
+  .container {
+    width: 75%;
+    max-width: 60rem;
+  }
+}
+
 .row {
   position: relative;
-  width: 100%; }
+  width: 100%;
+}
 
-.row [class^="col"] {
+.row [class^=col] {
   float: left;
   margin: 0.5rem 2%;
-  min-height: 0.125rem; }
+  min-height: 0.125rem;
+}
 
 .row::after {
   content: "";
   display: table;
-  clear: both; }
+  clear: both;
+}
 
 .col-1,
 .col-2,
@@ -55,245 +64,389 @@
 .col-10,
 .col-11,
 .col-12 {
-  width: 96%; }
+  width: 96%;
+}
 
 .col-1-sm {
-  width: 4.3333333333%; }
+  width: 4.3333333333%;
+}
 
 .col-2-sm {
-  width: 12.6666666667%; }
+  width: 12.6666666667%;
+}
 
 .col-3-sm {
-  width: 21%; }
+  width: 21%;
+}
 
 .col-4-sm {
-  width: 29.3333333333%; }
+  width: 29.3333333333%;
+}
 
 .col-5-sm {
-  width: 37.6666666667%; }
+  width: 37.6666666667%;
+}
 
 .col-6-sm {
-  width: 46%; }
+  width: 46%;
+}
 
 .col-7-sm {
-  width: 54.3333333333%; }
+  width: 54.3333333333%;
+}
 
 .col-8-sm {
-  width: 62.6666666667%; }
+  width: 62.6666666667%;
+}
 
 .col-9-sm {
-  width: 71%; }
+  width: 71%;
+}
 
 .col-10-sm {
-  width: 79.3333333333%; }
+  width: 79.3333333333%;
+}
 
 .col-11-sm {
-  width: 87.6666666667%; }
+  width: 87.6666666667%;
+}
 
 .col-12-sm {
-  width: 96%; }
+  width: 96%;
+}
 
 @media only screen and (min-width: 45em) {
   .col-1 {
-    width: 4.3333333333%; }
-  .col-2 {
-    width: 12.6666666667%; }
-  .col-3 {
-    width: 21%; }
-  .col-4 {
-    width: 29.3333333333%; }
-  .col-5 {
-    width: 37.6666666667%; }
-  .col-6 {
-    width: 46%; }
-  .col-7 {
-    width: 54.3333333333%; }
-  .col-8 {
-    width: 62.6666666667%; }
-  .col-9 {
-    width: 71%; }
-  .col-10 {
-    width: 79.3333333333%; }
-  .col-11 {
-    width: 87.6666666667%; }
-  .col-12 {
-    width: 96%; }
-  .hidden-sm {
-    display: block; } }
+    width: 4.3333333333%;
+  }
 
+  .col-2 {
+    width: 12.6666666667%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.3333333333%;
+  }
+
+  .col-5 {
+    width: 37.6666666667%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.3333333333%;
+  }
+
+  .col-8 {
+    width: 62.6666666667%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.3333333333%;
+  }
+
+  .col-11 {
+    width: 87.6666666667%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
 html {
-  background-color: #f8f7f7; }
+  background-color: #f8f7f1;
+}
 
 h1, h6, h5, h4, h3, h2 {
-  font-family: 'Karla_regular';
+  font-family: "Karla_regular";
   font-size: 3.815rem;
   margin-top: 0px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+}
 
 h2 {
-  font-size: 3.052rem; }
+  font-size: 3.052rem;
+}
 
 h3 {
-  font-size: 2.411rem; }
+  font-size: 2.411rem;
+}
 
 h4 {
-  font-size: 1.953rem; }
+  font-size: 1.953rem;
+}
 
 h5 {
-  font-size: 1.563rem; }
+  font-size: 1.563rem;
+}
 
 h6 {
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+}
 
 #regHead {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin: 0; }
+  margin: 0;
+}
 
 div {
   margin-top: 0px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+}
 
 .container_main {
   max-width: 70rem;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
 .menu {
-  text-align: center; }
-  .menu h4 {
-    padding: 16px; }
-  .menu a {
-    text-decoration: none; }
+  text-align: center;
+}
+.menu h4 {
+  padding: 16px;
+}
+.menu a {
+  text-decoration: none;
+}
 
 .ticket-cont h2 {
-  margin-bottom: 32px; }
-
+  margin-bottom: 32px;
+}
 .ticket-cont table td {
-  font-family: 'Karla_regular';
+  font-family: "Karla_regular";
   font-weight: 400;
   font-size: 1.563rem;
-  padding: 8px; }
+  padding: 8px;
+}
 
 .ticket-wrapper {
-  font-family: 'Karla_regular'; }
-  .ticket-wrapper .form-btn {
-    font-size: 1rem; }
+  font-family: "Karla_regular";
+}
+.ticket-wrapper .form-btn {
+  font-size: 1rem;
+}
 
 .checkout {
   margin: 0 auto 0 auto;
   display: flex;
-  align-items: center; }
-  .checkout h2 {
-    margin-bottom: 32px; }
-  .checkout table {
-    font-family: 'Karla_regular';
-    font-size: 1.25rem; }
-    .checkout table td {
-      min-width: 15rem; }
-  .checkout .statusForm {
-    max-width: 50rem;
-    margin: 0 auto 0 auto;
-    padding: 16px;
-    width: 100%; }
-    .checkout .statusForm form label {
-      display: block;
-      padding: 4px 0 4px 0;
-      margin: 4px 0 4px 0; }
-    .checkout .statusForm form input {
-      border-radius: 2px;
-      border-width: 2px;
-      border-style: solid;
-      border-color: black;
-      padding: 8px;
-      width: 100%; }
-  .checkout .form-btn {
-    font-size: 1.25rem;
-    padding: 1rem;
-    margin-top: 1.5rem; }
+  align-items: center;
+}
+.checkout h2 {
+  margin-bottom: 32px;
+}
+.checkout table {
+  font-family: "Karla_regular";
+  font-size: 1.25rem;
+}
+.checkout table td {
+  min-width: 15rem;
+}
+.checkout .statusForm {
+  max-width: 50rem;
+  margin: 0 auto 0 auto;
+  padding: 16px;
+  width: 100%;
+}
+.checkout .statusForm form label {
+  display: block;
+  padding: 4px 0 4px 0;
+  margin: 4px 0 4px 0;
+}
+.checkout .statusForm form input {
+  border-radius: 2px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  padding: 8px;
+  width: 100%;
+}
+.checkout .form-btn {
+  font-size: 1.25rem;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.bg {
+  margin: 0;
+  padding: 0;
+  background-color: #2b2bff;
+  width: 55rem;
+  height: 100vh;
+  position: absolute;
+  top: 0em;
+  bottom: 0em;
+  left: 0;
+  z-index: -1;
+}
+
+.button-arrange {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button-arrange .form-btn {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.first {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70rem;
+  min-height: 95vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.first .side-image {
+  width: 30rem;
+}
+.first .side-image h1, .first .side-image h2, .first .side-image h3, .first .side-image h4, .first .side-image h5, .first .side-image h6 {
+  color: white;
+  font-size: 5rem;
+}
+.first .ticket-wrapper {
+  width: 30rem;
+  flex-direction: column;
+}
+.first .ticket-wrapper {
+  margin-left: auto;
+}
+.first .statusForm label {
+  font-size: 1.25rem;
+  display: block;
+  padding: 16px 0 16px 0;
+}
+.first .statusForm input {
+  border-radius: 2px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  padding: 8px;
+  width: 20rem;
+}
+.first .statusForm .form-btn {
+  margin-top: 32px;
+}
 
 nav {
   border-top: solid black 2px;
   border-bottom: solid black 2px;
-  color: #2b2bff; }
-  nav ul {
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0; }
-  nav li {
-    padding: 8px;
-    margin: 0 8px 0 8px; }
-  nav a {
-    color: #6969ff;
-    text-decoration: none;
-    font-family: 'Plex_bold';
-    font-size: 1.25rem; }
+  color: #2b2bff;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+nav li {
+  padding: 8px;
+  margin: 0 8px 0 8px;
+}
+nav a {
+  color: #6969ff;
+  text-decoration: none;
+  font-family: "Plex_bold";
+  font-size: 1.25rem;
+}
 
 section {
   padding: 16px 0 16px 0;
-  margin: 1rem 0 1rem 0; }
+  margin: 1rem 0 1rem 0;
+}
 
 .hero {
-  margin-top: 0; }
-  .hero .home-head {
-    text-align: center;
-    padding: 2rem 0 2rem 0; }
-  .hero img {
-    height: 46rem;
-    width: 100%; }
+  margin-top: 0;
+}
+.hero .home-head {
+  text-align: center;
+  padding: 2rem 0 2rem 0;
+}
+.hero img {
+  height: 46rem;
+  width: 100%;
+}
 
 .about p, .events-section p {
-  font-family: 'Karla_regular';
+  font-family: "Karla_regular";
   font-weight: 500;
-  font-size: 1.563rem; }
-
+  font-size: 1.563rem;
+}
 .about img, .events-section img {
   width: 15rem;
-  height: 100%; }
+  height: 100%;
+}
 
 .form {
   padding: 2rem 0 2rem 0;
-  margin: 0 auto 0 auto; }
-  .form input {
-    border-radius: 2px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
-    padding: 8px;
-    width: 100%; }
+  margin: 0 auto 0 auto;
+}
+.form input {
+  border-radius: 2px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  padding: 8px;
+  width: 100%;
+}
 
 .contact {
-  font-family: 'Karla_regular';
-  font-size: 1.25rem; }
-  .contact label {
-    min-width: 15rem; }
-  .contact input {
-    font-size: 1.25rem; }
-  .contact textarea {
-    border-radius: 2px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
-    padding: 8px;
-    width: 100%; }
-  .contact #privacy {
-    width: unset; }
-  .contact table td {
-    min-width: 10rem;
-    padding: 8px; }
-  .contact .form-btn {
-    font-size: 1.25rem;
-    padding: 1rem; }
+  font-family: "Karla_regular";
+  font-size: 1.25rem;
+}
+.contact label {
+  min-width: 15rem;
+}
+.contact input {
+  font-size: 1.25rem;
+}
+.contact textarea {
+  border-radius: 2px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  padding: 8px;
+  width: 100%;
+}
+.contact #privacy {
+  width: unset;
+}
+.contact table td {
+  min-width: 10rem;
+  padding: 8px;
+}
+.contact .form-btn {
+  font-size: 1.25rem;
+  padding: 1rem;
+}
 
 .form-btn {
-  font-family: 'Karla_regular';
+  font-family: "Karla_regular";
   background: #bbff00;
   color: #1d1d1d;
   cursor: pointer;
@@ -304,15 +457,45 @@ section {
   border-radius: 5px;
   width: auto;
   position: relative;
-  min-width: 150px; }
-  .form-btn:hover {
-    background: #2b2bff;
-    box-shadow: 0px 6px 15px #0000ff61;
-    color: #ffffff; }
-    .form-btn:hover::after {
-      opacity: 1;
-      transition: all 0.25s;
-      color: #ffffff; }
+  min-width: 150px;
+}
+.form-btn:hover {
+  background: #2b2bff;
+  box-shadow: 0px 6px 15px #0000ff61;
+  color: #ffffff;
+}
+.form-btn:hover::after {
+  opacity: 1;
+  transition: all 0.25s;
+  color: #ffffff;
+}
+
+.admin {
+  font-family: "Karla_regular";
+  background: #2b2bff;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: normal;
+  padding: 0.5rem;
+  border: 0;
+  transition: all 0.25s;
+  border-radius: 5px;
+  width: auto;
+  position: relative;
+  min-width: 150px;
+}
+.admin:hover {
+  background: #bbff00;
+  box-shadow: 0px 6px 15px #0000ff61;
+  color: #1d1d1d;
+}
+.admin:hover::after {
+  color: #1d1d1d;
+  opacity: 1;
+  transition: all 0.25s;
+  color: #ffffff;
+}
 
 .registrationForm {
   max-width: 480px;
@@ -320,39 +503,45 @@ section {
   margin-right: auto;
   background-color: #C4C4C4;
   border-radius: 5px;
-  border: gray solid 0.3rem; }
-  .registrationForm form {
-    max-width: 300px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-family: 'Karla_regular';
-    margin-left: auto;
-    margin-right: auto; }
-  .registrationForm label {
-    width: 90%;
-    display: block;
-    font-size: 1rem;
-    margin-top: 16px; }
-  .registrationForm input {
-    width: 98%;
-    font-size: 1.25rem;
-    height: 32px;
-    line-height: 30px;
-    background-color: #FFFFFF;
-    margin-left: auto;
-    margin-right: auto;
-    border: gray solid 0.5px;
-    border-radius: 5px;
-    cursor: text; }
-  .registrationForm a {
-    text-decoration: none; }
-  .registrationForm p {
-    text-align: center;
-    color: black;
-    text-decoration: none;
-    font-size: 0.8rem; }
+  border: gray solid 0.3rem;
+}
+.registrationForm form {
+  max-width: 300px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: "Karla_regular";
+  margin-left: auto;
+  margin-right: auto;
+}
+.registrationForm label {
+  width: 90%;
+  display: block;
+  font-size: 1rem;
+  margin-top: 16px;
+}
+.registrationForm input {
+  width: 98%;
+  font-size: 1.25rem;
+  height: 32px;
+  line-height: 30px;
+  background-color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  border: gray solid 0.5px;
+  border-radius: 5px;
+  cursor: text;
+}
+.registrationForm a {
+  text-decoration: none;
+}
+.registrationForm p {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
 
 button {
   font-size: 1.25rem;
@@ -361,114 +550,145 @@ button {
   padding-left: 24px;
   padding-right: 24px;
   border-color: black;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
 .ticket-wrapper {
   display: flex;
   align-items: center;
-  min-height: 50vh; }
-  .ticket-wrapper .home-head {
-    margin-bottom: 32px; }
+  min-height: 50vh;
+}
+.ticket-wrapper .home-head {
+  margin-bottom: 32px;
+}
 
 .ticket-cont {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  align-items: center; }
-  .ticket-cont .home-head {
-    padding: 1rem;
-    max-width: 20rem; }
-  .ticket-cont .statusForm {
-    max-width: 20rem;
-    margin: 0 auto 0 auto;
-    padding: 16px;
-    width: 30%; }
-    .ticket-cont .statusForm form label {
-      display: block;
-      padding: 4px 0 4px 0;
-      margin: 4px 0 4px 0; }
-    .ticket-cont .statusForm form input {
-      border-radius: 2px;
-      border-width: 2px;
-      border-style: solid;
-      border-color: black;
-      padding: 8px;
-      width: 100%; }
-    .ticket-cont .statusForm form button {
-      margin-top: 8px; }
-  .ticket-cont .ticketStatus {
-    max-width: 30rem;
-    margin: 0 auto 0 auto;
-    padding: 16px; }
-    .ticket-cont .ticketStatus table {
-      font-family: 'Karla_regular';
-      font-size: 1.25rem;
-      font-weight: 600; }
-      .ticket-cont .ticketStatus table td {
-        padding: 4px; }
-      .ticket-cont .ticketStatus table tr :nth-child(1) {
-        text-align: right; }
+  align-items: center;
+}
+.ticket-cont .home-head {
+  padding: 1rem;
+  max-width: 20rem;
+}
+.ticket-cont .statusForm {
+  max-width: 20rem;
+  margin: 0 auto 0 auto;
+  padding: 16px;
+  width: 30%;
+}
+.ticket-cont .statusForm form label {
+  display: block;
+  padding: 4px 0 4px 0;
+  margin: 4px 0 4px 0;
+}
+.ticket-cont .statusForm form input {
+  border-radius: 2px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  padding: 8px;
+  width: 100%;
+}
+.ticket-cont .statusForm form button {
+  margin-top: 8px;
+}
+.ticket-cont .ticketStatus {
+  max-width: 30rem;
+  margin: 0 auto 0 auto;
+  padding: 16px;
+}
+.ticket-cont .ticketStatus table {
+  font-family: "Karla_regular";
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.ticket-cont .ticketStatus table td {
+  padding: 4px;
+}
+.ticket-cont .ticketStatus table tr :nth-child(1) {
+  text-align: right;
+}
 
 .events-section img {
   max-width: 50rem;
   width: 100%;
-  margin: 32px auto 0 auto; }
+  margin: 32px auto 0 auto;
+}
 
 .events-heading {
   text-align: center;
-  padding: 64px 0 64px 0; }
-  .events-heading h1, .events-heading h2, .events-heading h3, .events-heading h4, .events-heading h5, .events-heading h6 {
-    margin: auto 0 auto 0; }
+  padding: 64px 0 64px 0;
+}
+.events-heading h1, .events-heading h2, .events-heading h3, .events-heading h4, .events-heading h5, .events-heading h6 {
+  margin: auto 0 auto 0;
+}
 
 #events-page :nth-child(2n+1) {
-  flex-direction: row-reverse; }
+  flex-direction: row-reverse;
+}
 
 .events-flex-container {
   margin-top: 3rem;
   display: flex;
-  flex-direction: row; }
-  .events-flex-container :nth-child(2) {
-    margin-left: auto;
-    margin-right: auto; }
-  .events-flex-container .events-flex-item img {
-    max-width: 25rem; }
-  .events-flex-container .events-flex-item h2 {
-    padding: 16px; }
-  .events-flex-container .events-flex-item table td {
-    font-family: 'Karla_regular';
-    font-weight: 400;
-    font-size: 1.563rem;
-    padding: 16px; }
-  .events-flex-container .events-flex-item .form-btn {
-    font-size: 1.25rem;
-    padding: 16px;
-    margin-left: 16px;
-    margin-top: 16px; }
+  flex-direction: row;
+}
+.events-flex-container :nth-child(2) {
+  margin-left: auto;
+  margin-right: auto;
+}
+.events-flex-container .events-flex-item img {
+  max-width: 25rem;
+}
+.events-flex-container .events-flex-item h2 {
+  padding: 16px;
+}
+.events-flex-container .events-flex-item table td {
+  font-family: "Karla_regular";
+  font-weight: 400;
+  font-size: 1.563rem;
+  padding: 16px;
+}
+.events-flex-container .events-flex-item .form-btn {
+  font-size: 1.25rem;
+  padding: 16px;
+  margin-left: 16px;
+  margin-top: 16px;
+}
 
 .checkoutForm {
-  font-family: 'Karla_regular';
+  font-family: "Karla_regular";
   font-weight: 600;
   justify-content: center;
   background-color: transparent;
-  color: #1D3557; }
-  .checkoutForm label {
-    display: block;
-    padding: 8px 0 8px 0; }
-  .checkoutForm input {
-    font-family: 'Karla_regular';
-    font-weight: bold;
-    width: 360px;
-    padding: 12px;
-    border-color: #1D3557;
-    border-radius: 5px; }
-  .checkoutForm input:invalid {
-    border-color: red; }
-  .checkoutForm button {
-    margin: 16px 0 0 0;
-    font-size: 1rem;
-    padding: 8px 16px 8px 16px; }
+  color: #1D3557;
+}
+.checkoutForm label {
+  display: block;
+  padding: 8px 0 8px 0;
+}
+.checkoutForm input {
+  font-family: "Karla_regular";
+  font-weight: bold;
+  width: 360px;
+  padding: 12px;
+  border-color: #1D3557;
+  border-radius: 5px;
+}
+.checkoutForm input:invalid {
+  border-color: red;
+}
+.checkoutForm button {
+  margin: 16px 0 0 0;
+  font-size: 1rem;
+  padding: 8px 16px 8px 16px;
+}
 
 .checkout-2 {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

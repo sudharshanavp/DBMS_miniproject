@@ -12,8 +12,8 @@ $reg41: 3.052rem;
 $reg69: 3.815rem;
 
 html{
-    
-    background-color:#f8f7f7;
+
+    background-color:#f8f7f1;
 }
 
 h1 {
@@ -141,6 +141,73 @@ div{
     }
 }
 
+.bg {
+    margin: 0;
+    padding: 0;
+    background-color: #2b2bff;
+    width: 55rem;
+    height: 100vh;
+    position: absolute;
+    top: 0em;
+    bottom: 0em;
+    left: 0;
+    z-index: -1;
+}
+
+.button-arrange{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    .form-btn{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+.first{
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 70rem;
+   min-height: 95vh;
+    .side-image{
+        width: 30rem;
+        h1{
+        color: white;
+        font-size: 5rem;
+        }
+    }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .ticket-wrapper{
+        width: 30rem;
+        flex-direction: column;
+    }
+    .ticket-wrapper{
+                margin-left: auto;
+
+    }
+    .statusForm{
+        label{
+            font-size: $reg20;
+            display: block;
+            padding: 16px 0 16px 0;
+        }
+        input{
+            border-radius: 2px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            padding: 8px;
+            width: 20rem;
+        }
+        .form-btn{
+            margin-top: 32px;
+        }
+    }
+}
+
 nav {
 border-top: solid black 2px;
 border-bottom: solid black 2px;
@@ -251,7 +318,7 @@ section {
         }
     }
 
- .form-btn {
+.form-btn {
     font-family: 'Karla_regular';
     background: #bbff00;
     color: #1d1d1d;
@@ -278,6 +345,38 @@ section {
         }
     }
 }
+
+.admin{
+     font-family: 'Karla_regular';
+        background: #2b2bff;
+        color: #ffffff;
+    cursor: pointer;
+    font-size: $reg16;
+    line-height: normal;
+    padding: 0.5rem;
+    border: 0;
+    transition: all 0.25s;
+    border-radius: 5px;
+    width: auto;
+    position: relative;
+    min-width: 150px;
+
+    &:hover {
+    background: #bbff00;
+        box-shadow: 0px 6px 15px #0000ff61;
+
+    color: #1d1d1d;
+        &::after {
+    color: #1d1d1d;
+            opacity: 1;
+            transition: all 0.25s;
+            color: #ffffff;
+
+        }
+    }
+}
+
+
 
 .registrationForm{
   max-width: 480px;

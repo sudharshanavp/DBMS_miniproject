@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Hover Events</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="bg"> </div>
+    <section class="first">
+        <div class="side-image">
+            <h1>FULL<br />HOVER<br />EVENTS<br /></h1>
+        </div>
+        <div class="ticket-wrapper">
+            <h2>Login</h2>
+            <div class="statusForm">
+                <form method="post">
+                    <label for="text">Email</label>
+                    <input type="email" name="mail" id="mail">
+                    <label for="phone">Phone Number</label>
+                    <input onchange="this.value=addSpaces(this.value);" type="tel" pattern="[0-9]{10}" maxlength="10"
+                        name="ph" id="phone">
+                    <label for="password">Password</label>
+                    <input type="password" name="pass" id="pass">
+                    <div class="button-arrange"> <button class="form-btn"
+                            onclick="window.location.href='admin-login.html'" type="button">Admin
+                            Login</button>
+                        <button type="submit" class="form-btn" value="submit">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
